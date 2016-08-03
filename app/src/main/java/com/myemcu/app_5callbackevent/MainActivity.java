@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         return false; // 事件可向外传播
 
     }
+
+    public void btn_Click(View v) {
+        Toast.makeText(this,"标签按钮的触摸事件触发了", Toast.LENGTH_SHORT).show();
+    }
+
 }
