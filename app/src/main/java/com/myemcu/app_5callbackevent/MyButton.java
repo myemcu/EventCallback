@@ -22,8 +22,10 @@ public class MyButton extends Button { //Alt+Enter 创建构造器(选择带两�
     @Override//Ctrl+O后敲onTouch即可找到
     public boolean onTouchEvent(MotionEvent event) {
 
-        Toast.makeText(context,"MyButton中的触摸事件触发了!", Toast.LENGTH_SHORT).show();
+        System.out.println("MyButton中的触摸事件触发了");
+        Toast.makeText(context,"MyButton中的触摸事件触发了", Toast.LENGTH_SHORT).show();
 
-        return true;
+        //return true;      // 事件终结
+        return false;       // 事件可以向外传播
     }
 }
